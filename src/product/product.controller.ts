@@ -20,7 +20,7 @@ export class ProductController {
 
 
     // Get all product
-    @UseGuards(AuthGuard('jwt'))
+    // @UseGuards(AuthGuard('jwt'))
     @Get()
     getUser() {
         return this.productService.getAll();
